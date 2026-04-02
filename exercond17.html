@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 17</title>
+</head>
+<body>
+    <h1>exercício 17</h1>
+    <script>
+        let  Midade = Infinity
+        let nome1 = ""
+
+        for (let i = 1; i <= 10; i++) {
+           let nome = prompt("digite o nome da pessoa " )
+           document.write(" <br> o nome da pessoa é: " + nome)
+            let idade = parseFloat(prompt("digite a idade da pessoa " ))
+                document.write(" <br> a idade da pessoa é: " + idade)
+
+            if (idade < Midade) {
+                Midade = idade
+                nome1 = nome
+            }
+        }
+        alert(" <br> é a mais nova é: " + nome1)
+        alert(" <br> a idade da pessoa mais nova é: " + Midade)
+    </script>
+    
+</body>
+</html>

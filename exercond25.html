@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 24</title>
+</head>
+
+<body>
+    <h1>exercício 24</h1>
+    <script>
+
+        let total = 0
+        let prato = parseFloat(prompt(" digite o numero do prato 1=vegano,2=peixe,3=frango,4=carne"))
+        switch (prato) {
+            case 1:
+                total += 180
+                break;
+            case 2:
+
+                total += 230
+                break;
+            case 3:
+                total += 250
+                break;
+            case 4:
+                total += 350
+                break;
+            default:
+                document.write(" <br> prato inexistente")
+        }
+        let sobremesa = parseFloat(prompt("digite o numero da sobremesa 1=abacaxi,2=sorvete diet,3=mouse diet,4=mouse chocolate"))
+
+        switch (sobremesa) {
+            case 1:
+                total += 75
+                break;
+            case 2:
+                total += 110
+                break;
+            case 3:
+                total += 170
+                break;
+            case 4:
+                total += 200
+                break;
+            default:
+                document.write(" <br> sobremesa inexistente")
+        }
+        let bebida = parseFloat(prompt("digite o numero da bebida 1=cha,2=suco laranja,3=suco melao,4=refrigerante diet"))
+
+        switch (bebida) {
+            case 1:
+                total += 20
+                break;
+            case 2:
+                total += 70
+                break;
+            case 3:
+                total += 100
+                break;
+            case 4:
+                total += 65
+                break;
+            default:
+                document.write(" <br> bebida inexistente")
+        }
+        document.write(" <br> prato: " + prato)
+        document.write(" <br> sobremesa: " + sobremesa)
+        document.write(" <br> bebida: " + bebida)
+        document.write(" <br> total: " + total)
+
+    </script>
+</body>
+
+</html>
